@@ -1,0 +1,34 @@
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.Parent = nil
+hrp.Parent = game.Players.LocalPlayer.Character
+
+local gun = game.Players.LocalPlayer.Character["Glock 17"]
+local gunSettings = require(gun.ConfigMods.CConfig)
+    gunSettings.BaseDamage = 1000
+    gunSettings.LimbDamage = 1000
+    gunSettings.ArmorDamage = 1000
+    gunSettings.HeadDamage = 1000
+    gunSettings.EShieldDamage = 1000
+	
+    gunSettings.SideKickMin = 0
+    gunSettings.SideKickMax = 0
+    gunSettings.AimSideKickMin = 0
+    gunSettings.AimSideKickMax = 0
+    gunSettings.gunRecoilMin = 0
+    gunSettings.gunRecoilMax = 0
+    gunSettings.AimKickbackMin = 0
+    gunSettings.AimKickbackMax = 0
+    gunSettings.KickbackMin = 0
+    gunSettings.KickbackMax = 0
+    gunSettings.CamShakeMin = 0
+    gunSettings.CamShakeMax = 0
+    gunSettings.AimCanShakeMin = 0
+    gunSettings.AimCamShakeMax = 0
+
+    gunSettings.BulletSpeed = math.huge
+    gunSettings.Ammo = math.huge
+    gunSettings.StoredAmmo = math.huge
+    gunSettings.AutoEnabled = true
+    gunSettings.CanSelectFire = true
+    gunSettings.AntiTK = false
+    gunSettings.Firerate = .00000000000000000000000000000001
